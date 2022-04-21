@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { Feather, createIconSet } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
@@ -52,11 +52,17 @@ export const UserName = styled.Text`
   color: ${({ theme }) => theme.colors.shape };
   font-size: ${RFValue(18)}px;
   font-family: ${({ theme }) => theme.fonts.bold};
-`; 
+`;
 
 export const Icon = styled<any>(Feather)`
   color: ${({ theme }) => theme.colors.secondary };
-  font-size: ${RFValue(24)}px
+  font-size: ${RFValue(24)}px;
 `;
 
-  
+export const HighlightCards = styled.ScrollView.attrs({
+  horizontal: true,
+  showsHorizontalScrollIndicator: true,
+  contentContainerStyle: { paddingHorizontal: 24 }
+})`
+`;
+
