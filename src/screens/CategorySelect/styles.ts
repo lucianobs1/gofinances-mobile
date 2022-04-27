@@ -39,7 +39,9 @@ export const Category = styled.TouchableOpacity<CategoryProps>`
   align-items: center;
 
   background-color: ${({ isActive, theme }) =>
-    isActive ? theme.colors.secondary_light : theme.colors.background
+    isActive ?
+    theme.colors.secondary_light :
+    theme.colors.background
   };
 `;
 
